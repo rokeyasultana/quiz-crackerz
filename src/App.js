@@ -4,8 +4,14 @@ import Home from './pages/Home/Home'
 import Main from './pages/Layout/Main'
 import Blog from './pages/Blog/Blog'
 import NotFound from './pages/NotFound/NotFound';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   const router = createBrowserRouter([
     {
@@ -15,12 +21,14 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'), 
-          element: <Home></Home>
+          element:<Home></Home>,
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz')
+     
         },
         {path: '/blog',
         element: <Blog></Blog>
-      },
+      }
+       
         
       ]
     }
