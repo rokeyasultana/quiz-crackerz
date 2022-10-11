@@ -20,10 +20,11 @@ function App() {
       errorElement: <NotFound></NotFound>,
       children: [
         {
-          path: '/',
+          path: '/', 
+          loader: async () => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz`)
+          },
           element:<Home></Home>,
-          loader: () => fetch('https://openapi.programming-hero.com/api/quiz')
-     
         },
         {path: '/blog',
         element: <Blog></Blog>
