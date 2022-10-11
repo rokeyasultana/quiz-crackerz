@@ -7,6 +7,8 @@ import NotFound from './pages/NotFound/NotFound';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Statistics from './pages/Statistics/Statistics';
+import QuizDetails from './pages/Quiz/QuizDetails';
 
 function App() {
   useEffect(() => {
@@ -26,8 +28,21 @@ function App() {
           },
           element:<Home></Home>,
         },
+        {
+          path: '/quizDetails/:id', 
+          loader: async ({params}) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          },
+          element:<QuizDetails></QuizDetails>
+        },
         {path: '/blog',
         element: <Blog></Blog>
+      },
+        {path: '/statistics',
+        loader: async () => {
+          return fetch(`https://openapi.programming-hero.com/api/quiz`)
+        },
+        element: <Statistics></Statistics>
       }
        
         
