@@ -9,7 +9,7 @@ const Quizzes = () => {
    const quizzesData = loaderData.data; 
   
     return (
-        <div className='grid place-items-center gap-3 mb-10 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 mt-10 '>
+        <div data-aos="fade-up" data-aos-duration="1900"  className='grid place-items-center gap-3 mb-10 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 mt-10 '>
 {
     quizzesData.map(data =>(
         <Quiz

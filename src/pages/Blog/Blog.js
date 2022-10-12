@@ -17,7 +17,7 @@ style={{ height: '300px', width: '600px' }}
        
       </div>
       
-      <div className='justify-center justify-items-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-20 mb-35  gap-4  text-black '>
+      <div data-aos="fade-up" data-aos-duration="1900"  className='justify-center justify-items-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-20 mb-35  gap-4  text-black '>
       <div >
       <div class="card  card-compact w-96 shadow-xl border-2 border-cyan-500">
   

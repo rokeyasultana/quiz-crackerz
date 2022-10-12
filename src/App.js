@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/Home/Home'
 import Main from './pages/Layout/Main'
 import Blog from './pages/Blog/Blog'
-import NotFound from './pages/NotFound/NotFound';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -19,7 +19,7 @@ function App() {
     {
       path:'/',
       element: <Main></Main>,
-      errorElement: <NotFound></NotFound>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
           path: '/', 
@@ -44,6 +44,9 @@ function App() {
           return fetch(`https://openapi.programming-hero.com/api/quiz`)
         },
         element: <Statistics></Statistics>
+      },{
+        path:'*',
+        element: <ErrorPage></ErrorPage>
       }
        
         

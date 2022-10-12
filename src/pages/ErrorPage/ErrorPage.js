@@ -1,7 +1,7 @@
 import React from 'react';
 import "@lottiefiles/lottie-player";
 import { Controls, Player } from '@lottiefiles/react-lottie-player';
-const NotFound = () => {
+const ErrorPage = () => {
     return (
         <div >
 <div>
@@ -21,4 +21,4 @@ style={{ height: '600px', width: '600px' }}
     );
 };
 
-export default NotFound;
+export default ErrorPage;
