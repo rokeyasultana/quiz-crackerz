@@ -1,11 +1,20 @@
 import React from 'react';
-
+import "@lottiefiles/lottie-player";
+import { Controls, Player } from '@lottiefiles/react-lottie-player';
 const Blog = () => {
     return (
         <div>
           <div>
-      <div>
-        <h2 className='text-center text-cyan-500 font-serif text-5xl mt-5'>FAQ</h2>
+      <div className='mt-5'>
+      <Player 
+src='https://assets7.lottiefiles.com/private_files/lf30_gqwdpikn.json'
+className="player"
+loop
+autoplay
+style={{ height: '300px', width: '600px' }}
+/>
+<Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} />
+       
       </div>
       
       <div className='justify-center justify-items-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-20 mb-35  gap-4  text-black '>

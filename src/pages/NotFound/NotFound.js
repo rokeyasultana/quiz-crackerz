@@ -3,7 +3,7 @@ import "@lottiefiles/lottie-player";
 import { Controls, Player } from '@lottiefiles/react-lottie-player';
 const NotFound = () => {
     return (
-        <div>
+        <div >
 <div>
     <h2 className='text-5xl mt-10 text-cyan-500'>Opps!!! Page Not Found</h2>
 </div>

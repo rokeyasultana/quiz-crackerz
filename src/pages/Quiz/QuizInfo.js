@@ -14,6 +14,7 @@ const QuizInfo = ({quiz,length}) => {
 
         if(quiz.correctAnswer === option){
           toast.success('Correct Answer');
+
         }
 
         else{
@@ -29,9 +30,7 @@ const QuizInfo = ({quiz,length}) => {
 
     return (
         <div  className='card  w-96 border-2 border-cyan-500 shadow-xl'>
-           <h1>Quiz No:{quantity} {quiz.question.slice(3,-4)} <span> <small onClick={()=> quizVisibility()}>   
-        <FontAwesomeIcon icon={faEye} color='cyan' />
-        </small></span></h1>
+          <h1>Quiz No:{quantity} {quiz.question.slice(3,-4)} </h1>
         
         <div>
     <div>
@@ -49,8 +48,14 @@ const QuizInfo = ({quiz,length}) => {
       ))}
 </div>
 
+<div>
 
-           <ToastContainer />
+<span>Show correct answer : <small onClick={()=> quizVisibility()}>   
+        <FontAwesomeIcon icon={faEye} color='red' />
+        </small></span> 
+          
+</div>
+<ToastContainer />
         </div>
     );
 };
