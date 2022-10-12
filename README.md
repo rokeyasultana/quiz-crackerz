@@ -11,6 +11,8 @@ This project was tailwind css  with [Create React App].
 * Daisy ui component libary
 * React toastify
 * Fontawesome icon
+* LottieFiles
+
 
 ## Live site : <a target="_blank"  href='https://lustrous-frangollo-40406d.netlify.app/'> QuizQuark </a>
 
