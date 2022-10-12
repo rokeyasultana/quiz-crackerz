@@ -5,19 +5,19 @@ const Blog = () => {
     return (
         <div>
           <div>
-      <div className='mt-5'>
+      <div className='mt-5 '>
       <Player 
-src='https://assets7.lottiefiles.com/private_files/lf30_gqwdpikn.json'
+src='https://assets9.lottiefiles.com/packages/lf20_k27t2gov.json'
 className="player"
 loop
 autoplay
-style={{ height: '300px', width: '600px' }}
+style={{ height: '300px', width: '300px' }}
 />
 <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} />
        
       </div>
       
-      <div data-aos="fade-up" data-aos-duration="1900"  className='justify-center justify-items-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-20 mb-35  gap-4  text-black '>
+      <div data-aos="fade-up" data-aos-duration="1900"  className='justify-center justify-items-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-20 mb-35  gap-4  text-black  text-left'>
       <div >
       <div class="card  card-compact w-96 shadow-xl border-2 border-cyan-500">
   

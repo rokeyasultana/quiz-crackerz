@@ -6,7 +6,7 @@ const Quiz = ({data}) => {
     const {id, name,logo,total} = data;
     return (
         <div>
-         <div class="card w-64 bg-cyan-500 shadow-xl">
+         <div   class="card w-64 bg-cyan-500 shadow-xl">
   <figure><img className='mt-5' style={{height:"200px"}} src={logo} alt="logo" /></figure>
   <div class="card-body">
     <h2 class="text-center text-xl">{name}</h2>
