@@ -1,8 +1,6 @@
-# Name of website 
-QuizQuark
+# Name of website : QuizQuark
 
 This project was tailwind css  with [Create React App].
-
 
 ### Usage
 * Create React App
@@ -12,13 +10,11 @@ This project was tailwind css  with [Create React App].
 * React toastify
 * Fontawesome icon
 * LottieFiles
-
+* AOS
 
 ## Live site : <a target="_blank"  href='https://lustrous-frangollo-40406d.netlify.app/'> QuizQuark </a>
 
-In the project directory, you can run:
 
-### `npm start`
 
 
 
