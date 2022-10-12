@@ -9,9 +9,11 @@ import QuizOption from './QuizOption';
 const QuizInfo = ({quiz,length}) => {
 
     let quantity = length + 1;
-    const handelQuiz = (option) =>{
+
+    const handelQuiz = (option) => {
+
         if(quiz.correctAnswer === option){
-toast.success('Correct Answer');
+          toast.success('Correct Answer');
         }
 
         else{
@@ -19,13 +21,15 @@ toast.success('Correct Answer');
         }
     }
 
-    const quizVisibility = () =>{
-toast.info(quiz.correctAnswer);
+    const quizVisibility = () => {
+
+        toast.info(quiz.correctAnswer);
+
     }
 
     return (
         <div  className='card  w-96 border-2 border-cyan-500 shadow-xl'>
-           <h1>Quiz No:{quantity} {quiz.question} <span> <small onClick={()=> quizVisibility()}>   
+           <h1>Quiz No:{quantity} {quiz.question.slice(3,-4)} <span> <small onClick={()=> quizVisibility()}>   
         <FontAwesomeIcon icon={faEye} color='cyan' />
         </small></span></h1>
         
