@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Statistics from './pages/Statistics/Statistics';
 import QuizDetails from './pages/Quiz/QuizDetails';
+import Topics from './pages/Topics/Topics';
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,9 @@ function App() {
           },
           element:<QuizDetails></QuizDetails>
         },
+        {path: '/topics',
+        element: <Topics></Topics>
+      },
         {path: '/blog',
         element: <Blog></Blog>
       },

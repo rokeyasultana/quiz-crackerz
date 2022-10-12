@@ -13,8 +13,8 @@ const Blog = () => {
       <div class="card  card-compact w-96 shadow-xl border-2 border-cyan-500">
   
   <div class="card-body">
-    <h2 class="card-title"></h2>
-<p></p>
+    <h2 class="card-title">what is the purpose of react router</h2>
+<p>React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. Let us create a simple application to React to understand how the React Router works.</p>
     
   </div>
 </div>
@@ -23,7 +23,7 @@ const Blog = () => {
       <div class="card  card-compact w-96 shadow-xl border-2 border-cyan-500">
   
   <div class="card-body">
-    <h2 class="card-title"></h2>
+    <h2 class="card-title">How does context api works</h2>
     <p>
 </p>
     

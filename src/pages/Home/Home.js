@@ -13,7 +13,7 @@ const Home = () => {
       <h1 className="text-5xl text-center font-bold text-left">Web Development <span className='text-cyan-600'>Quizzes</span> & Trivia</h1>
   </div>
 
-  <div className='grid lg:grid-cols-2  sm:grid-cols-1 md:grid-cols-2 place-content-center'>
+  <div className='grid lg:grid-cols-2  sm:grid-cols-1 md:grid-cols-1 place-content-center'>
   <div className='mt-10'>
    <Player 
 src='https://assets3.lottiefiles.com/private_files/lf30_66Pk1L.json'
