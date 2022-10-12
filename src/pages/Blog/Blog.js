@@ -25,6 +25,7 @@ const Blog = () => {
   <div class="card-body">
     <h2 class="card-title">How does context api works</h2>
     <p>
+    Context API is a React API that can solve a lot of problems that modern applications face related to state management and how they’re passing state to their components. Instead of installing a state management library in your project that will eventually cost your project performance and increase your bundle size, you can easily go with Context API and be fine with it.
 </p>
     
   </div>
