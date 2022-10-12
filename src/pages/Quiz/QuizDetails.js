@@ -5,10 +5,10 @@ import QuizInfo from './QuizInfo';
 const QuizDetails = () => {
 
     const quiz = useLoaderData().data;
-    console.log(quiz);
+ 
 
     const quizQuestion = quiz.questions;
-    console.log(quizQuestion);
+   
 
     return (
 

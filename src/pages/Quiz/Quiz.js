@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-
+import { faArrowAltCircleRight} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Quiz = ({data}) => {
     const {id, name,logo,total} = data;
     return (
@@ -12,7 +12,8 @@ const Quiz = ({data}) => {
     <h2 class="card-title">{name}</h2>
     <p class="card-title">Total: {total}</p>
     <div class="card-actions justify-center">
-    <Link to={`../quizDetails/${id}`}> <button class="btn btn-outline">Get Start</button></Link>
+    <Link to={`../quizDetails/${id}`}> <button class="btn btn-outline">Get Start <FontAwesomeIcon icon={faArrowAltCircleRight}  />
+    </button></Link>
     </div>
   </div>
 </div>

@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import Quiz from './Quiz';
 
 
+
 const Quizzes = () => {
     const loaderData = useLoaderData();
    const quizzesData = loaderData.data; 

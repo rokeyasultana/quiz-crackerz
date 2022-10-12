@@ -1,8 +1,6 @@
 import React from 'react';
 import "@lottiefiles/lottie-player";
 import { Controls, Player } from '@lottiefiles/react-lottie-player';
-import { Link } from 'react-router-dom';
-import Blog from '../Blog/Blog';
 import Quizzes from '../Quiz/Quizzes';
 
 const Home = () => {

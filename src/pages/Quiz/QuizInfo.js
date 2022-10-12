@@ -24,16 +24,18 @@ toast.info(quiz.correctAnswer);
     }
 
     return (
-        <div  className='card w-96 border-2 border-cyan-500 shadow-xl'>
-           <h1>Quiz No:{quantity} {quiz.question}</h1>
+        <div  className='card  w-96 border-2 border-cyan-500 shadow-xl'>
+           <h1>Quiz No:{quantity} {quiz.question} <span> <small onClick={()=> quizVisibility()}>   
+        <FontAwesomeIcon icon={faEye} color='cyan' />
+        </small></span></h1>
         
         <div>
-        <p onClick={()=> quizVisibility()}>   
-        <FontAwesomeIcon icon={faEye} />
-        </p>
+    <div>
+   
+    </div>
         </div>
 
-<div className='' >
+<div  >
 {quiz.options.map((option, length) => (
         <QuizOption
           option={option}
